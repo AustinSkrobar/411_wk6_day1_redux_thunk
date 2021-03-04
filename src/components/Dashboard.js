@@ -24,7 +24,6 @@ const Dashboard = (props) => {
             <Table>
                 <TableHead>
                     <TableRow>
-                        <TableCell>Id</TableCell>
                         <TableCell>Make/Model</TableCell>
                         <TableCell>MPG</TableCell>
                         <TableCell>Cylinders</TableCell>
@@ -35,9 +34,6 @@ const Dashboard = (props) => {
                 <TableBody>
                 {props.cars.map((car, idx) => (
                     <TableRow key={car.id}>
-                        <TableCell component="th" scope="row">
-                            {car.id}
-                        </TableCell>
                         <TableCell>{car["name"]}</TableCell>
                         <TableCell>{car["mpg"]}</TableCell>
                         <TableCell>{car["cylinders"]}</TableCell>
